@@ -1,0 +1,297 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 20 px;
+	overflow-x: hidden;
+	color: black;
+	font-family: 'Flamenco', cursive;
+
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('samu.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 130vh;
+}
+.clearfix:after{
+	content: "."''
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.row{
+	max-width: 1186px;
+	margin: 0 auto;
+}
+
+.logo{
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top:0.1px;
+  
+}
+
+nav{
+   background: transparent;
+   position: center;
+   top: 0;
+   height: 78px;
+   width: 100%;
+ }
+ label.logo{
+   color: #fff;
+   font-size: 35px;
+   line-height: 80px;
+   padding: 0 100px;
+   font-weight: bold;
+ }
+ nav ul{
+   float: right;
+   margin-right: 20px;
+ }
+ nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+ }
+ nav ul li a{
+   color:whitesmoke;
+   font-size: 17px;
+   padding: 7px 13px;
+   border-radius: 13px;
+   text-transform: uppercase;
+   text-decoration-line: none;
+ }
+ a.active,a:hover{
+   background:black;
+   transition: .5s;
+ }
+ .checkbtn{
+   font-size: 30px;
+   color: darkcyan;
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+ }
+ #check{
+   display: none;
+ }
+ @media (max-width: 952px){
+   label.logo{
+     font-size: 30px;
+     padding-left: 50px;
+   }
+   nav ul li a{
+     font-size: 16px;
+   }
+ }
+ @media (max-width: 858px){
+   .checkbtn{
+     display: block;
+   }
+ 
+ 
+   ul{
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: darkcyan;
+     top: 80px;
+     left: -100%;
+     text-align: center;
+     transition: all .5s;
+   }
+ 
+   nav ul li{
+     display: block;
+     margin: 50px 0;
+     line-height: 30px;
+   }
+   nav ul li a{
+     font-size: 20px;
+   }
+ 
+   a:hover,a.active{
+     background: none;
+     color: #ddd;
+   }
+   #check:checked ~ ul{
+     left: 0;
+   }
+ }
+.main-content-header{
+	width: 1180px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+
+}
+
+h1 {
+	color: white;
+	font-size: 240%;
+	word-spacing: 5px;
+	border-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.btn{
+	display: inline-block; padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	border-radius: 20px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+	background-color: transparent;
+	color:whitesmoke;
+	margin-left: 15px;
+	border: 1px solid black;
+}
+
+.btn-full:hover{
+	background-color:black;
+}
+
+.btn-nav{
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.btn-nav:hover{
+	background-color: black;
+}
+
+
+
+.colorchange{
+	animation: colorchangesurakshya 1s infinite;
+}
+
+.footer-main-div{
+  font-family: montserrat;
+   width: 100%;
+   height: 0px;
+   position: relative;
+   margin: -750px 0px 0px 0px;
+   background: transparent;
+   padding: 20px 0px;
+}
+
+.footer-social-icon{
+   width: 100%;
+   height: 100px;
+   margin: 0px;
+   background-color: whitesmoke;
+
+}
+
+.footer-social-icons ul{
+   margin: 0px;
+   padding: 0px;
+   text-align: center;
+}
+
+.footer-social-icons ul li{
+   display: inline-block;
+   width: 50px;
+   height: 20px;
+   margin: 0px 5px;
+   border-radius: 100%;
+}
+.footer-social-icons ul li a:hover{
+
+  color:white;
+  background: transparent;
+}
+.footer-social-icons ul li a{
+   color: black;
+   font-size: 25px;
+}
+.footer-social-icons ul li a i{
+   line-height: 10px;
+}
+
+.footer-bottom{
+   width: 100%;
+   height: auto;
+   margin: auto;
+   background: transparent;
+   padding: 13px;
+}
+
+.footer-bottom{
+   font-size: 25px;
+   text-align: center;
+   color: #c2bba9;
+   font-weight: lighter;
+   letter-spacing: 1px;
+}
+
+/* Text */
+.footer-bottom p{
+   font-family: 'Flamenco', cursive;
+   font-weight: normal;
+   color:white;
+}
+
+footer{
+   width: 100%;
+   position: relative;
+   margin-top: 110vh;
+   bottom: 0px;
+   background: transparent;
+}
+@keyframes colorchangesurakshya {
+	0%{color:lightsalmon;}
+	25%{color: lightpink; ;}
+	50%{color:lightgrey;}
+	75%{color: skyblue;}
+   100%{color: black;}
+   25%{color: lightgreen; ;}
+}
+
+
+
+
+/*////////Responsive queries ////////*/
+@media only screen and (max-width: 1186px){
+	.main-content-header{
+		width: 100%;
+		padding:0 2%;
+	}
+}
+@media only screen and (max-width: 998px){
+h1 {font-size: 200%;}
+}
+
+@media only screen and (max-width: 1186px){
+h1{font-style: 180%;}
+
+
+
+#header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#header a.active {
+  background-color: #878787;
+  color: white;
+}
